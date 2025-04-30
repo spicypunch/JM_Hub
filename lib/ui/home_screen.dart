@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:jm_hub/ui/app_icon.dart';
+import 'package:jm_hub/ui/web_view_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+
+  void _navigateToWebView(BuildContext context, String url) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => WebViewScreen(url: url),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +33,9 @@ class HomeScreen extends StatelessWidget {
             AppIconWidget(
               iconName: "GitHub",
               imagePath: 'asset/img/github.png',
-              onClick: () {},
+              onClick: () {
+                _navigateToWebView(context, 'https://github.com/spicypunch');
+              },
             ),
             AppIconWidget(
               iconName: "Resume",
