@@ -14,27 +14,29 @@ class AppIconWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(bottom: 48),
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.end,
-
-        children: [
-          Image.asset(
-            imagePath,
-            width: 100,
-            height: 100,
-            fit: BoxFit.cover,
-          ),
-          Text(
-            iconName,
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-            )
-          ),
-        ],
+    return GestureDetector(
+      onTap: onClick,
+      child: Padding(
+        padding: EdgeInsets.only(bottom: 48),
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Image.asset(
+              imagePath,
+              width: 100,
+              height: 100,
+              fit: BoxFit.cover,
+            ),
+            Text(
+              iconName,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              )
+            ),
+          ],
+        ),
       ),
     );
   }
