@@ -14,9 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        // backgroundColor: Color(0xFFF5ECCE),
+        backgroundColor: Colors.grey,
         body: Center(
           child: DeviceFrame(
-            device: Devices.android.bigPhone,
+            device: Devices.android.samsungGalaxyNote20Ultra,
             isFrameVisible: true,
             orientation: Orientation.portrait,
             screen: HomeScreen(),
