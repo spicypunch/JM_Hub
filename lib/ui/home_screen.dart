@@ -18,22 +18,22 @@ class HomeScreen extends StatelessWidget {
             AppIconWidget(
               iconName: "LinkedIn",
               imagePath: 'asset/img/linkedin.png',
-              onClick: () {},
+              url: 'https://www.linkedin.com/in/%EC%A2%85%EB%AF%BC-%EA%B9%80-92243a216/',
             ),
             AppIconWidget(
               iconName: "GitHub",
               imagePath: 'asset/img/github.png',
-              onClick: () {},
+              url: 'https://github.com/spicypunch',
             ),
             AppIconWidget(
               iconName: "Resume",
               imagePath: 'asset/img/resume.png',
-              onClick: () {},
+              url: 'https://your-resume-url.com',
             ),
             AppIconWidget(
               iconName: "Blog",
               imagePath: 'asset/img/blog.png',
-              onClick: () {},
+              url: 'https://velog.io/@godmin66/posts',
             ),
           ],
         ),
