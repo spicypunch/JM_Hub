@@ -5,7 +5,6 @@ import 'package:url_launcher/url_launcher.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-// URL 실행 메소드 수정
   void _openUrl(String urlString) async {
     final Uri url = Uri.parse(urlString);
     try {
