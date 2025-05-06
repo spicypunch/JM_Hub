@@ -14,7 +14,6 @@ class AppIconWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Padding(
       padding: EdgeInsets.only(bottom: 48),
       child: GestureDetector(
@@ -29,14 +28,12 @@ class AppIconWidget extends StatelessWidget {
               height: 80,
               fit: BoxFit.cover,
             ),
-            Text(
-              iconName,
-              style: TextStyle(
-                fontSize: 16,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              )
-            ),
+            Text(iconName,
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                )),
           ],
         ),
       ),

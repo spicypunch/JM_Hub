@@ -1,5 +1,5 @@
-import 'package:jm_hub/ui/app_icon.dart';
 import 'package:flutter/material.dart';
+import 'package:jm_hub/ui/app_icon.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -35,7 +35,8 @@ class HomeScreen extends StatelessWidget {
             AppIconWidget(
               iconName: "Resume",
               imagePath: 'asset/img/resume.png',
-              onClick: () => _openUrl('https://docs.google.com/document/d/1xms06c3Y01NOUqEiYBo7iXBDITuzqw_Nb2lg9LC-DZU/edit?usp=sharing'),
+              onClick: () => _openUrl(
+                  'https://docs.google.com/document/d/1xms06c3Y01NOUqEiYBo7iXBDITuzqw_Nb2lg9LC-DZU/edit?usp=sharing'),
             ),
             AppIconWidget(
               iconName: "GitHub",
@@ -50,7 +51,8 @@ class HomeScreen extends StatelessWidget {
             AppIconWidget(
               iconName: "LinkedIn",
               imagePath: 'asset/img/linkedin.png',
-              onClick: () => _openUrl('https://www.linkedin.com/in/jmkim19950325/'),
+              onClick: () =>
+                  _openUrl('https://www.linkedin.com/in/jmkim19950325/'),
             ),
           ],
         ),
